@@ -1,3 +1,4 @@
+const { default: chalk } = require("chalk");
 const { Console } = require("console");
 const express = require("express");
 const app = express();
@@ -9,7 +10,8 @@ app.get("/", (req, res) => {
         <pre>list of route servers
                /multiply
                /divide
-               /subtract</pre>
+               /subtract
+               /Baby Food Purees</pre>
                </html>`)
 });
 
@@ -29,6 +31,12 @@ app.get("/subtract", function (req, res) {
     res.send("<h1>Let's Do The Math !</h1>");
 });
 
+app.get("/Baby Food Purees" , (req, res) => {
+    let foodPurees = [ "apple", "pear", "plum", "carrot", "swet potato"];
+    let index = Math.floor(Math.random()*4)
+    console.log("My baby loves when I make" + foodPurees[index] + "baby food");
+});
+
 app.listen(PORT, () => {
-    console.log("It's Alive!!!")
+    console.log(chalk.bgCyan("It's Alive!!!"))
 })
