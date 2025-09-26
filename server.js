@@ -33,7 +33,7 @@ app.get("/subtract", function (req, res) {
     q=100;
     r=100;
     z=q-r;
-    res.send("<h1>Let's Do The Math if it takes all we have!" + z + "</h1>");
+    res.send("<h1>Let's Do The Math If It Takes All We Have!" + z + "</h1>");
 });
 
 app.get("/Baby Food Purees" , function (req, res) {
