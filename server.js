@@ -23,11 +23,17 @@ app.get("/multiply", function (req, res) {
 });
 
 app.get("/divide", function (req, res) {
-    res.send("<h1>Let's Do The Math Without Dividing The House!</h1>");
+    let m = 500;
+    let n = 50;
+    let o = m/n
+    res.send("<h1>Let's Do The Math Without Dividing The House!" + o + "</h1>");
 });
 
 app.get("/subtract", function (req, res) {
-    res.send("<h1>Let's Do The Math !</h1>");
+    q=100;
+    r=100;
+    z=q-r;
+    res.send("<h1>Let's Do The Math if it takes all we have!" + z + "</h1>");
 });
 
 app.get("/Baby Food Purees" , function (req, res) {
