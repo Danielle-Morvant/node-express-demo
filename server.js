@@ -17,9 +17,9 @@ app.get("/", (req, res) => {
 app.get("/multiply", function (req, res) {
     let a = 25;
     let b = 4;
-    output = 25*4
-    console.log(output)
-    res.send("<h1>Let's Do The Math By The Multitudes! + output</h1>");
+    let c = 25*4
+    console.log(c)
+    res.send("<h1>Let's Do The Math By The Multitudes!" + c + "</h1>");
 });
 
 app.get("/divide", function (req, res) {
